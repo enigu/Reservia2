@@ -1,3 +1,61 @@
+.menu {
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 25px;
+}
+
+.menu img {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 40px;
+}
+
+.liste_nav {
+    display: flex;
+    vertical-align: top;
+    align-content: space-between;
+    padding: auto;
+    flex-grow: initial;
+    list-style: none;
+}
+
+.liste_nav a {
+    align-self: flex-start;
+    padding: 25px 25px 25px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+    border-top: 3px solid #0065FC;
+}
+
+.anchor-text a:hover {
+    text-decoration: none;
+
+}
+
+a:active {
+    text-decoration: none;
+    border-top: 3px solid #0065FC;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
 .cards_marseille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
