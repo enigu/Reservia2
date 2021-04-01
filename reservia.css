@@ -56,11 +56,97 @@ a:focus {
     text-decoration: none;
 }
 
+#hebergement {
+    padding:  24px 16px 24px 16px;
+}
+
+#hebergement h6 {
+    font-weight: lighter;
+}
+
+.btn-map {
+  border: 2px solid #FFFFFF;
+  color: #000000;
+  background-color: #F2F2F2;
+  font-weight: bolder;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  padding: 8px 12px 8px 12px;
+
+}
+
+.btn-mar {
+  border: 1px solid #F2F2F2;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: bolder;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  padding: 5px 8px 5px 8px; 
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    padding: 25px 25px 25px 0px;
+    color:  #000000;
+}
+#btn-filtres {
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-weight: bolder;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 5px 8px 5px 8px;
+}
+
+ #btn-eco, #btn-fam, #btn-rom, #btn-ani {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-weight:bolder;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 4px 8px 4px 8px;
+}
+#money, #child, #heart, #dog {
+    flex-grow: 1;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 4px 8px 4px 8px;
+    border-radius: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+#circle {
+  color: #0065FC;
+}  
+
+.info h6 {
+  font-weight: lighter;
+  padding: 4px 8px 4px 8px;
+}
+
 .cards_marseille {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
-  }
+}
 
 .rate {
     display: flex;

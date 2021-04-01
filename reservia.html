@@ -26,34 +26,31 @@
     <div id="bloc_page">
 
         <div id="hebergement">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <h5>En plein centre ville ou en plein nature</h5>
+            <h4>Trouvez votre hébergement pour des vacances de rêve</h4>
+            <h6>En plein centre ville ou en plein nature</h6>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light"><i class="fas fa-map-marker-alt"></i></button> 
-                <button type="button" class="btn btn-light">Marseille, France</button>
+                <button type="button" class="btn-map"><i class="fas fa-map-marker-alt"></i></button> 
+                <button type="button" class="btn-mar">Marseille, France</button>
                 <button type="button" class="btn btn-primary">Rechercher</button>
               </div>
+
             <div class="filtres">
-                <h4>Filtres</h4>
-                <ul class="btn-filtres">
-                    <li><button type="button" class="btn btn-light">Economie</button></li>
-                    <i class="fas fa-money-bill-wave"></i>
-                    <li><button type="button" class="btn btn-light">Familial</button></li> 
-                    <i class="fas fa-child"></i>   
-                    <li><button type="button" class="btn btn-light">Romantique</button></li>
-                    <i class="fas fa-heart"></i>
-                    <li><button type="button" class="btn btn-light">Animaux autorisés</button></li>
-                    <i class="fas fa-dog"></i>
-                </ul>
+                <li><button type="button" id="btn-filtres">Filtres</button></li>
+                <li><button type="button" id="btn-eco"> <span id="money"><i class="fas fa-money-bill-wave"></i></span> Economique</button></li>
+                <li><button type="button" id="btn-fam"><span id="child"><i class="fas fa-child"></i></span> Familial</button></li> 
+                <li><button type="button" id="btn-rom"><span id="heart"><i class="fas fa-heart"></i></span> Romantique</button></li>
+                <li><button type="button" id="btn-ani"><span id="dog"><i class="fas fa-dog"></i></span> Animaux autorisés</button></li>
+                
             </div>
+
             <div class="info">
-                <p><i class="fas fa-info-circle"></i></p>
+                <p id="circle"><i class="fas fa-info-circle"></i></p>
                 <h6>Plus de 500 logements sont disponibles dans cette ville </h6>
             </div>
         </div>    
 
         <div id="marseille">
-            <h3>Hébergements à Marseille</h3>
+            <h4>Hébergements à Marseille</h4>
 
             <div class="cards_marseille">    
                 <div class="cannebiere">
