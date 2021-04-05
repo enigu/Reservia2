@@ -154,34 +154,99 @@ a:focus {
 }
 
 #cards_marseille {
-    display: flex;  
+    display: flex;
+}
+
+.marseille {
+    background-color: #F2F2F2;
+    display: inline-block;
+    border-radius: 16px;
+}
+
+.marseille h4 {
+    padding: 16px; 
 }
 
 .hebergements_filtres {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: baseline;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px; 
+}
+
+.hebergements_filtres img {
+    width: 150px;
 }
 
 .cannebiere, .hotel_du_port, .hotel_les_mouettes, .hotel_de_la_mer, .auberge_le_panier, .hotel_chez_amina {
+    display: inline-block;
     background: white;                        
     padding: 8px;                             
     border-radius: 16px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
     flex-shrink: inherit;
-    width: 150px;
+    width: 180px;
+}
+
+.cannebiere img, .hotel_du_port img, .hotel_les_mouettes img, .hotel_de_la_mer img, .auberge_le_panier img, .hotel_chez_amina img {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    height: 50px; 
+}
+
+.card-info h6 {
+    font-size: 12px;  
+}
+
+.card-info p {
+    font-size: 8px;
+}
+.pop_cards { 
+  background-color: #F2F2F2;
 
 }
 
-#loke {
-    border-radius: 16px; 
+.pop_cards img {
+  width: 150px;
 }
 
 .rate {
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+#activites {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards_activites {
+    display: flex;
+    flex-direction: row;
+}
+
+.vieux_port {
+  background: white;                        
+  padding: 4px 0px 4px 0px;                             
+  border-radius: 16px;                        
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  object-fit: contain;
+  flex-shrink: inherit;
+  width: 150px;
 }
