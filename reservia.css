@@ -149,29 +149,41 @@ a:focus {
 }
 
 #bloc_page {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #cards_marseille {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 16px;
+    padding: 16px;
 }
 
 .marseille {
     background-color: #F2F2F2;
     display: inline-block;
     border-radius: 16px;
+    height: 550px;
 }
 
 .marseille h4 {
-    padding: 16px; 
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.marseille h6 {
+  padding: 8px;
+  font-size: 10px;
 }
 
 .hebergements_filtres {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  padding: 16px; 
+  padding: 16px;
+  background-color: #F2F2F2;
 }
 
 .hebergements_filtres img {
@@ -197,7 +209,11 @@ a:focus {
 }
 
 .card-info {
-    height: 50px; 
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
 }
 
 .card-info h6 {
@@ -207,13 +223,14 @@ a:focus {
 .card-info p {
     font-size: 8px;
 }
+
 .pop_cards { 
-  background-color: #F2F2F2;
-
-}
-
-.pop_cards img {
-  width: 150px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px 4px 8px;
+    height: 400px;
+    justify-content: space-around;
 }
 
 .rate {
@@ -224,11 +241,60 @@ a:focus {
     color: #0065FC;
 }
 
-.card-info {
+#populaires {
+    background-color: #F2F2F2;
+    border-radius: 16px;
+}
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 4px 8px;
+}
+
+.soleil_matin, .coeur_eau, .tout_bleu {
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    height: 90px;
+    padding: 8px 4px 8px 4px;
+    object-fit: contain;
+    border-radius: 16px;
+    align-items: center;  
+}
+
+.soleil_matin img, .coeur_eau img, .tout_bleu img {
+    border-radius: 8px;
+    height: 100px;
+    width: 70%;
+    object-fit: cover;
+}
+
+.soleil_matin p, .coeur_eau p, .tout_bleu p {
+    width: 100%;
+}
+
+.card_info {
+    height: 100px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    padding: 8px 4px 8px 4px;
+}
 
+.card_info h6 {
+    font-size: 12px;
+}
+
+.card_info p {
+    font-size: 8px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #0065FC;
 }
 
 #activites {
