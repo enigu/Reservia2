@@ -310,12 +310,16 @@ a:focus {
 .activites h4 {
     padding: 8px;
     font-size: 16px;
+    padding: 16px;
+    font-size: 12px;
     font-weight: bolder;
+}
 
 .cards_activites {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background: white;   
 }
 
 .vieux_port, .fort_pomeg, .iles_frioul, .parc_national, .notre_dame, .parc_longchamps {
@@ -324,13 +328,14 @@ a:focus {
     border-radius: 16px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
+    object-fit: cover;
     width: 150px;
 }
 
 .cards_activites img {
     height: 100px;
+    height: 90px;
 }
-
 
 .vieux_port, .parc_national {
     flex-grow: 2;
@@ -348,4 +353,11 @@ a:focus {
   object-fit: contain;
   flex-shrink: inherit;
   width: 150px;
+}.cardinfo {
+    background-color: white;
+    height: 50px;
+}
+
+.cardinfo h6 {
+    font-size: 12px;
 }
