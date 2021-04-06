@@ -300,11 +300,37 @@ a:focus {
 #activites {
     display: flex;
     flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 4px 8px 4px 8px;   
 }
+
+.activites h4 {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bolder;
 
 .cards_activites {
     display: flex;
     flex-direction: row;
+    border-radius: 16px;                        
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    object-fit: contain;
+    width: 150px;
+}
+
+.cards_activites img {
+    height: 100px;
+}
+
+
+.vieux_port, .parc_national {
+    flex-grow: 2;
+}
+
+.fort_pomeg, .notre_dame, .parc_longchamps {
+   flex-grow: 1;
 }
 
 .vieux_port {
