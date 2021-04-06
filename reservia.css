@@ -298,6 +298,7 @@ a:focus {
 }
 
 #activites {
+.activites {
     display: flex;
     flex-direction: row;
     flex-direction: column;
@@ -314,6 +315,12 @@ a:focus {
 .cards_activites {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.vieux_port, .fort_pomeg, .iles_frioul, .parc_national, .notre_dame, .parc_longchamps {
+    background: white;                        
+    padding: 4px 8px 4px 8px;                             
     border-radius: 16px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
