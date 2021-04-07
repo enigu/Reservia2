@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: 'Raleway';
+    src: url(raleway/Raleway-Black.ttf)
+}
 
 body {
   font-family: Raleway;
@@ -309,8 +312,10 @@ a:focus {
 
 .activites h4 {
     padding: 8px;
+    padding: 16px;
     font-size: 16px;
     font-weight: bolder;
+}
 
 .cards_activites {
     display: flex;
@@ -324,11 +329,13 @@ a:focus {
     border-radius: 16px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
+    object-fit: cover;
     width: 150px;
 }
 
 .cards_activites img {
     height: 100px;
+    height: 90px;
 }
 
 
@@ -348,4 +355,44 @@ a:focus {
   object-fit: contain;
   flex-shrink: inherit;
   width: 150px;
+}.cardinfo {
+    background-color: white;
+    height: 50px;
 }
+
+.cardinfo h6 {
+    font-size: 12px;
+}
+
+.apropo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    padding: 4px 8px 4px 8px;
+}
+
+.prop h6, .nos_hebergements h6, .assistance h6 {
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px 8px 4px 40px;
+}
+
+.fonctionnement, .qualite, .aide {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.nos_hebergements, .assistance {
+    padding: 4px 8px 4px 80px;
+}
+.fonctionnement a, .qualite a, .aide a {
+    color: black;
+    font-size: 9px;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+
+
