@@ -1,0 +1,64 @@
+
+@media(max-width: 1280px){
+    #bloc_page {
+        width: auto;
+    }
+}
+@media(max-width: 992px){
+
+}
+
+@media(max-width: 768px){
+    #bloc_page {
+        width: 700px;
+    }
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    #populaires {
+        grid-template-columns: 1fr;
+
+    }
+    .hebergements_filtres {
+        grid-template-columns: 1fr 1fr;
+    }
+    #cards_marseille {
+        flex-direction: column;
+    }
+    .activites {
+        flex-direction: column;
+    }
+
+    .apropo {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 576px){
+    #bloc_page {
+        width: 500px;
+    }
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    #populaires {
+        grid-template-columns: 1fr;
+
+    }
+    .hebergements_filtres {
+        grid-template-columns: 1fr;
+    }
+    #cards_marseille {
+        flex-direction: column;
+    }
+    .activites {
+        flex-direction: column;
+    }
+
+    .apropo {
+        flex-direction: column;
+    }
+
+}
