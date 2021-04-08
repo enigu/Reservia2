@@ -1,6 +1,10 @@
 @font-face {
     font-family: 'Raleway';
-    src: url(raleway/Raleway-Black.ttf)
+    src: url(raleway/Raleway-Light.ttf);
+    src: url(raleway/Raleway-Medium.ttf);
+    src: url(raleway/Raleway-Regular.ttf);
+    src: url(raleway/Raleway-SemiBold.ttf);
+    src: url(raleway/Raleway-Bold.ttf);
 }
 
 body {
@@ -156,27 +160,27 @@ a:focus {
     flex-direction: column;
 }
 
-#cards_marseille {
+#marseille {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 16px;
     padding: 16px;
 }
 
-.marseille {
+.hebergements {
     background-color: #F2F2F2;
     display: inline-block;
     border-radius: 16px;
     height: 550px;
 }
 
-.marseille h4 {
+.hebergements h4 {
     padding: 8px;
     font-size: 16px;
     font-weight: bolder;
 }
 
-.marseille h6 {
+.hebergements h6 {
   padding: 8px;
   font-size: 10px;
 }
@@ -193,18 +197,18 @@ a:focus {
     width: 150px;
 }
 
-.cannebiere, .hotel_du_port, .hotel_les_mouettes, .hotel_de_la_mer, .auberge_le_panier, .hotel_chez_amina {
+.hotels {
     display: inline-block;
     background: white;                        
     padding: 8px;                             
-    border-radius: 16px;                        
+    border-radius: 10px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
     flex-shrink: inherit;
     width: 180px;
 }
 
-.cannebiere img, .hotel_du_port img, .hotel_les_mouettes img, .hotel_de_la_mer img, .auberge_le_panier img, .hotel_chez_amina img {
+.hotels img {
     border-radius: 8px;
     height: 100px;
     width: 100%;
@@ -253,51 +257,52 @@ a:focus {
     display: flex;
     justify-content: space-between;
     padding: 4px 8px 4px 8px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
-.soleil_matin, .coeur_eau, .tout_bleu {
+.lesplus {
     background-color: white;
     display: flex;
-    overflow: hidden;
     height: 90px;
-    padding: 8px 4px 8px 4px;
+    padding: 4px 4px 4px 4px;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 10px;
     align-items: center;  
 }
 
-.soleil_matin img, .coeur_eau img, .tout_bleu img {
-    border-radius: 8px;
-    height: 100px;
-    width: 70%;
+.lesplus img {
+    border-radius:  10px 0px 0px 10px;
+    height: 100%;
+    width: 70px;
     object-fit: cover;
 }
 
-.soleil_matin p, .coeur_eau p, .tout_bleu p {
-    width: 100%;
-}
-
 .card_info {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    padding: 8px 4px 8px 4px;
+    height: 100%;
+    line-height: 2px;
+    background-color: white;
+    padding: 4px 4px 4px 4px;
 }
 
 .card_info h6 {
-    font-size: 12px;
+    font-size: 10px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 .card_info p {
-    font-size: 8px;
+    font-size: 6px;
+    padding: 4px 0px 4px 0px;
+    font-family: 'Raleway';
+    font-weight:lighter;
+    opacity: .7;
 }
 
 .stars {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 6px;
     color: #0065FC;
+    padding: 10px 4px 4px 4px;
 }
 
 .activites {

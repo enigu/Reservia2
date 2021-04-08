@@ -4,9 +4,6 @@
         width: auto;
     }
 }
-@media(max-width: 992px){
-
-}
 
 @media(max-width: 768px){
     #bloc_page {
@@ -39,19 +36,24 @@
     #bloc_page {
         width: 500px;
     }
+  
     .filtres {
         flex-wrap: wrap;
     }
 
     #populaires {
         grid-template-columns: 1fr;
-
     }
     .hebergements_filtres {
         grid-template-columns: 1fr;
     }
+
+    .marseille{
+        overflow: scroll;
+    }
     #cards_marseille {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row-reverse;
     }
     .activites {
         flex-direction: column;
