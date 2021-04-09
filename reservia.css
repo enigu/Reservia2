@@ -171,18 +171,21 @@ a:focus {
     background-color: #F2F2F2;
     display: inline-block;
     border-radius: 16px;
-    height: 550px;
+    height: 500px;
 }
 
 .hebergements h4 {
-    padding: 8px;
+    padding: 24px 4px 0px 16px;
     font-size: 16px;
-    font-weight: bolder;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
-.hebergements h6 {
-  padding: 8px;
+.hebergements h5 {
+  padding: 24px 4px 0px 16px;
   font-size: 10px;
+  font-family: 'Raleway';
+  font-weight: bolder;
 }
 
 .hebergements_filtres {
@@ -217,34 +220,28 @@ a:focus {
 
 .card-info {
     height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
+    line-height: 2px;
+    background-color: white;
+    padding: 4px 4px 4px 4px;
 }
 
 .card-info h6 {
-    font-size: 12px;  
+    font-size: 10px;
+    font-family: 'Raleway';
+    font-weight: bold; 
 }
 
 .card-info p {
-    font-size: 8px;
-}
-
-.pop_cards { 
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    padding: 4px 8px 4px 8px;
-    height: 400px;
-    justify-content: space-around;
+    font-size: 6px;
+    padding: 4px 0px 4px 0px;
+    font-family: 'Raleway';
+    font-weight:lighter;
+    opacity: .7;
+    margin-bottom: 5px;
 }
 
 .rate {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 6px;
     color: #0065FC;
 }
 
@@ -256,9 +253,22 @@ a:focus {
 .titre {
     display: flex;
     justify-content: space-between;
-    padding: 4px 8px 4px 8px;
+    padding: 24px 4px 0px 4px;
+}
+
+.titre h4 {
+    font-size: 16px;
     font-family: 'Raleway';
     font-weight: bold;
+}
+
+.pop_cards { 
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px 4px 8px;
+    height: 400px;
+    justify-content: space-around;
 }
 
 .lesplus {
