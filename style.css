@@ -1,28 +1,36 @@
 
-@media(max-width: 1280px){
+@media all and (max-width: 1280px){
     #bloc_page {
         width: auto;
     }
 }
 
-@media(max-width: 768px){
+@media all and (max-width: 768px){
     #bloc_page {
         width: 700px;
     }
+
+    .liste-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .filtres {
         flex-wrap: wrap;
     }
 
     #populaires {
         grid-template-columns: 1fr;
-
     }
+
     .hebergements_filtres {
         grid-template-columns: 1fr 1fr;
     }
+
     #cards_marseille {
         flex-direction: column;
     }
+
     .activites {
         flex-direction: column;
     }
@@ -32,35 +40,149 @@
     }
 }
 
-@media(max-width: 576px){
+@media all and (max-width: 576px){
     #bloc_page {
-        width: 500px;
+        width: 400px;
     }
-  
+
+    #bloc_page h4 {
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    #bloc_page h6 {
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    .menu img {
+        width: 42px;
+        height: 24px;
+    }
+
+    .liste_nav {
+        flex-direction: row;
+        font-size: 10px;
+    }
+
+    .flex_1 {
+        flex-grow: 1;
+    }
+
+    .flex_2 {
+        flex-grow: 4;
+        order: 1;
+    }
+
     .filtres {
         flex-wrap: wrap;
+    }
+
+    .filtres h6 {
+        padding: 0px;
+    }
+
+    .btn-image {
+        padding: 0px;
+    }
+
+    .boutons_filtres {
+        flex-wrap: wrap;
+        padding: 4px 25px 4px 4px;
     }
 
     #populaires {
         grid-template-columns: 1fr;
     }
-    .hebergements_filtres {
-        grid-template-columns: 1fr;
+
+    .pop_cards a {
+        width: 300px;
+        height: 100px;
     }
 
-    .marseille{
-        overflow: scroll;
+    #hebergement {
+        height: auto;
+        padding: 12px 4px 4px 16px;
     }
-    #cards_marseille {
+
+    .hebergements_filtres {
         display: flex;
-        flex-direction: row-reverse;
-    }
-    .activites {
         flex-direction: column;
+    }
+
+    .hotels {
+        width: 300px;
+        height: 150px;
+    }
+
+    .hotels a {
+        width: 300px;
+        height: 100px;
+    }
+
+    .card-info {
+        height: 40px;
+    }
+
+    .card-info h6 {
+        padding: 0px;
+    }
+
+    .card-info p{
+        padding: 0px;
+    }
+
+    #marseille{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hebergements {
+        height: auto;
+    }
+
+    .activites {
+        height: auto;
+    }
+
+    .activites h4 {
+        padding: 4px 4px 4px 16px;
+    }
+
+    .cards_activites {
+        flex-direction: column;
+    }
+
+    .cards_activites h6 {
+        width: 300px;
+    }
+
+    .big_card img {
+        height: 110px;
+        width: 300px;
+    }
+
+    .small_card {
+        padding: 0px;
+    }
+
+    .small_card img {
+        height: 110px;
+        width: 300px;
     }
 
     .apropo {
         flex-direction: column;
     }
+
+    .nos_hebergements, .assistance {
+        padding: 0;
+    }
+
 
 }

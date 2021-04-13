@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url(raleway/Raleway-Light.ttf);
-    src: url(raleway/Raleway-Medium.ttf);
-    src: url(raleway/Raleway-Regular.ttf);
-    src: url(raleway/Raleway-SemiBold.ttf);
-    src: url(raleway/Raleway-Bold.ttf);
+    font-family: "Raleway";
+    src: url("raleway/Raleway-Light.ttf");
+    src: url("raleway/Raleway-Medium.ttf");
+    src: url("raleway/Raleway-Regular.ttf");
+    src: url("raleway/Raleway-SemiBold.ttf");
+    src: url("raleway/Raleway-Bold.ttf");
 }
 
 body {
-  font-family: Raleway;
+  font-family: "Raleway";
 }
 
 .menu {
@@ -34,33 +34,30 @@ body {
     display: flex;
     vertical-align: top;
     align-content: space-between;
-    padding: auto;
-    flex-grow: initial;
     list-style: none;
+    font-family: 'Raleway';
+    font-weight: lighter;
 }
 
 .liste_nav a {
     align-self: flex-start;
-    padding: 25px 25px 25px 25px;
+    padding: 0px 25px 25px 25px;
 }
 
-a {
+.menu a {
     text-decoration: none;
     color: #0065FC;
+    font-family: 'Raleway';
+    font-weight: lighter;
 }
 
-a:hover {
+.menu a:hover {
     text-decoration: none;
     color: #000000;
     border-top: 3px solid #0065FC;
 }
 
-.anchor-text a:hover {
-    text-decoration: none;
-
-}
-
-a:active {
+.menu a:active {
     text-decoration: none;
     border-top: 3px solid #0065FC;
 }
@@ -71,57 +68,70 @@ a:focus {
 
 #hebergement {
     padding:  24px 16px 24px 16px;
+    font-family: 'Raleway';
 }
 
 #hebergement h6 {
+    font-family: 'Raleway';  
     font-weight: lighter;
 }
 
 .btn-map {
-  border: 2px solid #FFFFFF;
-  color: #000000;
-  background-color: #F2F2F2;
-  font-weight: bolder;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-  padding: 8px 12px 8px 12px;
+    border: 2px solid #FFFFFF;
+    color: #000000;
+    background-color: #F2F2F2;
+    font-weight: bolder;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 8px 12px 8px 12px;
+    border-radius:  10px 0px 0px 10px;
 
 }
 
-.btn-mar {
-  border: 1px solid #F2F2F2;
-  color: #000000;
-  background-color: #FFFFFF;
-  font-weight: bolder;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-  padding: 5px 8px 5px 8px; 
+.btn-primary {
+    border-radius:  0px 10px 10px 0px;
+}
+
+form {
+    border: 1px solid #F2F2F2;
+    background-color: #FFFFFF;
+    transition: opacity 0.3s ease;
+    padding: 5px 8px 5px 8px;
+    height: 42px; 
+}
+
+input {
+    border: transparent;
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: bolder;
 }
 
 .filtres {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: baseline;
+    justify-content: flex-start;
     list-style: none;
     padding: 25px 25px 25px 0px;
     color:  #000000;
 }
-#btn-filtres {
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-    color: #000000;
-    background-color: #FFFFFF;
-    font-weight: bolder;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-    padding: 5px 8px 5px 8px;
+
+.filtres h6 {
+    padding: 8px 12px 8px 0px;
 }
 
- #btn-eco, #btn-fam, #btn-rom, #btn-ani {
+.boutons_filtres {
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+    padding: 25px 25px 25px 4px;
+    color:  #000000;
+}
+
+ .btn-image {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     color: #000000;
@@ -129,14 +139,14 @@ a:focus {
     font-weight:bolder;
     opacity: 0.8;
     transition: opacity 0.3s ease;
-    padding: 4px 8px 4px 8px;
+    padding: 6px 8px 6px 0px;
+    margin: 4px 8px 4px 16px;
 }
-#money, #child, #heart, #dog {
-    flex-grow: 1;
+.icon {
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 4px 8px 4px 8px;
-    border-radius: 50px;
+    border-radius: 50px; 
 }
 
 .info {
@@ -182,18 +192,23 @@ a:focus {
 }
 
 .hebergements h5 {
-  padding: 24px 4px 0px 16px;
-  font-size: 10px;
-  font-family: 'Raleway';
-  font-weight: bolder;
+    padding: 24px 4px 0px 16px;
+    font-size: 10px;
+    font-family: 'Raleway';
+    font-weight: bolder;
 }
 
 .hebergements_filtres {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  padding: 16px;
-  background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    padding: 16px;
+    background-color: #F2F2F2;
+}
+
+.hebergements_filtres a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .hebergements_filtres img {
@@ -203,7 +218,7 @@ a:focus {
 .hotels {
     display: inline-block;
     background: white;                        
-    padding: 8px;                             
+    padding: 4px;                             
     border-radius: 10px;                        
     box-shadow: 0 10px 30px rgba(0,0,0,.1);
     object-fit: contain;
@@ -271,6 +286,11 @@ a:focus {
     justify-content: space-around;
 }
 
+.pop_cards a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .lesplus {
     background-color: white;
     display: flex;
@@ -327,56 +347,64 @@ a:focus {
 .activites h4 {
     padding: 16px;
     font-size: 16px;
-    padding: 16px;
-    font-size: 12px;
-    font-weight: bolder;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 .cards_activites {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    background: white;   
+    align-items: flex-start;
+    padding: 16px;
+    background-color: white;
 }
 
-.vieux_port, .fort_pomeg, .iles_frioul, .parc_national, .notre_dame, .parc_longchamps {
-    background: white;                        
-    padding: 4px 8px 4px 8px;                             
-    border-radius: 16px;                        
-    box-shadow: 0 10px 30px rgba(0,0,0,.1);
-    object-fit: contain;
-    object-fit: cover;
-    width: 150px;
+.cards_activites a {
+  text-decoration: none;
+  color: #000000;
 }
 
-.cards_activites img {
-    height: 100px;
+.cards_activites img {                    
+    border-radius: 10px 10px 0px 0px; 
+}
+
+.big_card {
+    padding: 8px 10px 8px 0px;
+}
+
+.big_card img {
+    width: 180px;
+    height: 250px;
+}
+
+.small_card {
+    padding: 8px 22px 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.small_card img {
+    width: 180px;
     height: 90px;
 }
 
-.vieux_port, .parc_national {
-    flex-grow: 2;
+.small_card a {
+    padding: 8px 10px 8px 4px;
 }
 
-.fort_pomeg, .notre_dame, .parc_longchamps {
-   flex-grow: 1;
-}
-
-.vieux_port {
-  background: white;                        
-  padding: 4px 0px 4px 0px;                             
-  border-radius: 16px;                        
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  object-fit: contain;
-  flex-shrink: inherit;
-  width: 150px;
-}.cardinfo {
+.cards_activites h6 {
     background-color: white;
-    height: 50px;
-}
-
-.cardinfo h6 {
-    font-size: 12px;
+    height: 32px;
+    width: 180px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border: 5px;
+    border-radius:  0px 0px 10px 10px;
+    padding: 6px 6px 6px 6px;
+    font-size: 10px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 
 .apropo {
@@ -391,6 +419,7 @@ a:focus {
     font-size: 12px;
     font-weight: bolder;
     padding: 4px 8px 4px 40px;
+    font-family: 'Raleway';
 }
 
 .fonctionnement, .qualite, .aide {
@@ -405,6 +434,8 @@ a:focus {
 .fonctionnement a, .qualite a, .aide a {
     color: black;
     font-size: 9px;
+    font-weight: lighter;
+    font-family: 'Raleway';
     opacity: 0.7;
     text-decoration: none;
 }
