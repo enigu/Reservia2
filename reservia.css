@@ -46,24 +46,20 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #0065FC;
+    color:#000000;
     font-family: 'Raleway';
     font-weight: lighter;
 }
 
 .menu a:hover {
     text-decoration: none;
-    color: #000000;
+    color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
 .menu a:active {
     text-decoration: none;
     border-top: 3px solid #0065FC;
-}
-
-a:focus {
-    text-decoration: none;
 }
 
 #hebergement {
