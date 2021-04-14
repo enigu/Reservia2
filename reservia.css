@@ -16,50 +16,55 @@ body {
     height: 80px;
     background-color: #FFFFFF;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: baseline;
     box-sizing: border-box;
     margin-top: 5px;
-    padding: 25px;
+    padding: 16px;
 }
 
 .menu img {
-    display: inline-block;
-    vertical-align: top;
+    position: absolute;
+    top: 16px;
+    left: 16px;
     width: 80px;
     height: 40px;
 }
 
 .liste_nav {
-    display: flex;
-    vertical-align: top;
-    align-content: space-between;
-    list-style: none;
     font-family: 'Raleway';
     font-weight: lighter;
+    padding: 0px 96px 24px 0px;
 }
 
 .liste_nav a {
-    align-self: flex-start;
     padding: 0px 25px 25px 25px;
-}
-
-.menu a {
     text-decoration: none;
     color:#000000;
     font-family: 'Raleway';
     font-weight: lighter;
 }
 
-.menu a:hover {
-    text-decoration: none;
+.liste_nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
-.menu a:active {
-    text-decoration: none;
+.liste_nav a:active {
     border-top: 3px solid #0065FC;
+}
+
+.droit {
+    position: absolute;
+    right: 16px;
+}
+
+.droit a {
+    color: #0065FC;
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-family: 'Raleway';
+    font-weight: lighter;
 }
 
 #hebergement {

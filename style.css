@@ -55,29 +55,24 @@
         font-weight: bolder;
     }
 
-    .menu {
-        flex-wrap: wrap;
-        padding: 8px;
-        height: min-content;
-    }
-
     .menu img {
-        width: 42px;
-        height: 24px;
+        width: 56px;
+        height: 32px;
     }
 
     .liste_nav {
-        flex-direction: row;
-        font-size: 10px;
+        position: relative;
+        top: 42px;
+        font-size: 12px;
     }
 
-    .flex_1 {
-        flex-grow: 1;
-    }
+    .liste_nav a {
+        padding: 0px 25px 4px 25px;
+    }    
 
-    .flex_2 {
-        flex-grow: 4;
-        order: 1;
+    .liste_nav a:hover {
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
     }
 
     .filtres {
