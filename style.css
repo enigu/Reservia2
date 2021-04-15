@@ -7,12 +7,15 @@
 
 @media all and (max-width: 768px){
     #bloc_page {
-        width: 700px;
+        width: 750px;
+        padding: 0px 8px 4px 16px;
     }
 
-    .liste-nav {
-        display: flex;
-        flex-wrap: wrap;
+    .liste_nav {
+        position: relative;
+        top: 42px;
+        font-size: 16px;
+        padding: 4px 240px 4px 8px;
     }
 
     .filtres {
@@ -23,6 +26,10 @@
         grid-template-columns: 1fr;
     }
 
+    .hebergements {
+        height: 650px;
+    }
+
     .hebergements_filtres {
         grid-template-columns: 1fr 1fr;
     }
@@ -31,13 +38,34 @@
         flex-direction: column;
     }
 
-    .activites {
-        flex-direction: column;
+    .pop_cards {
+        padding: 64px 8px 4px 8px;
+    }
+
+    .big_card {
+        padding: 8px 4px 8px 0px;
+    }
+
+    .big_card img {
+        width: 160px;
+        height: 250px;
+    }
+
+    .small_card {
+        padding: 8px 4px 8px 2px;
+    }
+
+    .small_card img {
+        width: 160px;
+        height: 90px;
+    }
+
+    .cards_activites h6 {
+        width: 160px;  
     }
 
     .apropo {
-        flex-direction: column;
-    }
+        flex-direction: row;
 }
 
 @media all and (max-device-width: 480px){

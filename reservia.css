@@ -337,8 +337,6 @@ input {
 
 .activites {
     display: flex;
-    flex-direction: row;
-    flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
     padding: 4px 8px 4px 8px;   
