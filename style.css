@@ -40,7 +40,7 @@
     }
 }
 
-@media all and (max-width: 576px){
+@media all and (max-device-width: 480px){
     #bloc_page {
         width: 400px;
     }
