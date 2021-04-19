@@ -7,7 +7,7 @@
 
 @media all and (max-width: 768px){
     #bloc_page {
-        width: 750px;
+        width: 100%;
         padding: 0px 8px 4px 16px;
     }
 
