@@ -9,6 +9,7 @@
 
 body {
   font-family: "Raleway";
+  margin: 24px;
 }
 
 .menu {
@@ -70,6 +71,10 @@ body {
 #hebergement {
     padding:  24px 16px 24px 16px;
     font-family: 'Raleway';
+}
+
+.btn-second {
+    display: none;
 }
 
 #hebergement h6 {
