@@ -18,20 +18,27 @@
         padding: 4px 240px 4px 8px;
     }
 
+    #marseille{
+        display: inline-block;
+        width: fit-content;
+    }
+
     .filtres {
         flex-wrap: wrap;
     }
 
     #populaires {
-        grid-template-columns: 1fr;
+        display:inline-block;
+        width: -webkit-fill-available;
+        padding: inherit;
     }
 
     .hebergements {
-        height: 650px;
+        width: -webkit-fill-available;
     }
 
     .hebergements_filtres {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #cards_marseille {
@@ -75,7 +82,7 @@
     }
     
     .btn-second {
-        display: auto;
+        display: inline-flex;
     }
 
     #bloc_page h4 {
@@ -127,8 +134,8 @@
     }
 
     #populaires {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
+        display: inline-block;
+        width: fit-content;   
     }
 
     .lesplus {
@@ -138,6 +145,7 @@
 
     #hebergement {
         height: auto;
+        width: fit-content;
         padding: 12px 4px 4px 16px;
     }
 
