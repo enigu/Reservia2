@@ -3,6 +3,12 @@
     #bloc_page {
         width: auto;
     }
+
+    .marseille {
+        display: flex;
+        padding: 0px;
+        margin: auto;
+    }
 }
 
 @media all and (max-width: 768px){
@@ -12,14 +18,25 @@
     }
 
     .liste_nav {
-        position: relative;
-        font-size: 16px;
+        margin: auto;
+        width: max-content;
+    }
+
+    .marseille{
+        display: flex;
+        padding: 0px;
+        width: auto;
+    }
+
+    #hebergements {
+        width: auto;
         margin: auto;
     }
 
-    #marseille{
-        display: inline-block;
-        padding: 0px;
+    #populaires {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .filtres {
@@ -28,15 +45,22 @@
 
     #populaires {
         display:inline-block;
-        padding: inherit;
+        width: auto;
     }
 
     .hebergements_filtres {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .row_hotel {
+        flex-wrap: wrap;
     }
 
     #cards_marseille {
         flex-direction: column;
+        width: auto;
     }
 
     .big_card {
@@ -68,8 +92,34 @@
 
 @media all and (max-width: 480px){
     #bloc_page {
-        width: 100%;
+        width: auto;
         margin: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu_mobile {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .menu_mobile img {
+        width: 16%;
+        height: fit-content;
+        margin-right: auto;
+    }
+
+    .line_1 {
+        display: flex;
+        width: auto;
+    }
+
+    .liste_nav a:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
     }
 
     .btn-group {
@@ -78,6 +128,7 @@
     
     .btn-second {
         display: inline-flex;
+        margin: auto;
     }
 
     #bloc_page h4 {
@@ -91,20 +142,9 @@
         font-weight: bolder;
     }
 
-    .menu img {
-        width: 72px;
-        height: 40px;
-    }
-
     .liste_nav {
-        position: relative;
-        font-size: 12px;
-        
-    }
-
-    .liste_nav a {
-        padding: 0px 25px 4px 25px;
-    }    
+        width: max-content;
+    }  
 
     .liste_nav a:hover {
         border-top: 0px;
@@ -115,8 +155,10 @@
         flex-wrap: wrap;
     }
 
-    .filtres h6 {
+    .filtres h5 {
         padding: 0px;
+        margin-left: 8px;
+        font-size: 16px;
     }
 
     .btn-image {
@@ -125,29 +167,42 @@
 
     .boutons_filtres {
         flex-wrap: wrap;
+        justify-content: left;
+        padding: 0px;
     }
 
     #populaires {
-        display: inline-block;  
+        display: inline-block;
+        width: auto;
     }
 
     .lesplus {
-        width: 300px;
-        height: 120px;
+        width: 260px;
+        height: auto;
     }
 
     #hebergement {
         height: auto;
-    }    
+        width: auto;
+    }
+    
+    #hebergement h4 {
+        margin-left: 8px;
+    }
 
     .hebergements_filtres {
         display: flex;
         flex-direction: column;
+        width: auto;
+    }
+
+    .row_hotel {
+        flex-wrap: wrap;
     }
 
     .hotels {
-        width: 300px;
-        height: 150px;
+        width: 260px;
+        height: auto;
     }
 
     .card-info {
@@ -162,18 +217,21 @@
         padding: 0px;
     }
 
-    #marseille{
+    .marseille{
         display: flex;
         flex-direction: column-reverse;
         padding: 0px;
+        width: auto;
     }
 
     .hebergements {
         height: auto;
+        width: auto;
     }
 
     #activites {
         height: auto;
+        width: auto;
     }
 
     .cards_activites {
@@ -181,7 +239,7 @@
     }
 
     .cards_activites h6 {
-        width: 300px;
+        width: 260px;
     }
 
     .big_card {
@@ -190,7 +248,7 @@
 
     .big_card img {
         height: 110px;
-        width: 300px;
+        width: 260px;
     }
 
     .small_card {
@@ -203,7 +261,7 @@
 
     .small_card img {
         height: 110px;
-        width: 300px;
+        width: 260px;
     }
 
     .apropo {
