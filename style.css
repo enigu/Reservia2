@@ -18,7 +18,7 @@
 
     .liste_nav {
         margin: auto;
-        width: max-content;
+        width: auto;
     }
 
     .marseille{
@@ -102,7 +102,7 @@
 
 @media all and (max-width: 480px){
     #bloc_page {
-        width: 100%;
+        width: 95%;
     }
 
     .menu {
@@ -150,12 +150,12 @@
     }
 
     #bloc_page h6 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: bolder;
     }
 
     .liste_nav {
-        width: max-content;
+        width: auto;
     }  
 
     .liste_nav a:hover {
@@ -201,8 +201,8 @@
         width: 288px;
         height: 120px;
         margin-bottom: 6px;
-        margin-left: 8px;
-        margin-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #hebergement {
@@ -229,8 +229,8 @@
         width: 288px;
         height: auto;
         margin-bottom: 8px;
-        margin-left: 8px;
-        margin-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card-info {
