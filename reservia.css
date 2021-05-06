@@ -12,6 +12,10 @@ body {
     margin: auto;
 }
 
+#bloc_page {
+    width: 95%;
+}
+
 body h4 {
     font-size: 1rem;
 }
