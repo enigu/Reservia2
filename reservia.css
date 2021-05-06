@@ -9,11 +9,20 @@
 
 body {
     font-family: "Raleway";
-    width: 95%;
+    margin: auto;
+}
+
+body h4 {
+    font-size: 1rem;
+}
+
+body h6 {
+    font-size: 0.8rem;
 }
 
 .menu_mobile {
     display: none;
+    font-size: 0.8rem;
 }
 
 .menu {
@@ -22,6 +31,8 @@ body {
     box-sizing: border-box;
     margin: auto;
     margin-top: 8px;
+    margin-left: 4px;
+    font-size: 0.8rem;
 }
 
 .menu img {
@@ -67,17 +78,26 @@ body {
 
 .recherche {
     font-family: 'Raleway';
-    margin-right: auto;
-    margin-left: 8px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-left: 16px;
 }
 
 .btn-second {
     display: none;
 }
 
-.recherche h6 {
+.recherche h4 {
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.recherche p {
     font-family: 'Raleway';  
     font-weight: lighter;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    opacity: 0.8;
 }
 
 .btn-map {
@@ -161,6 +181,7 @@ input {
     flex-direction: row;
     align-items: baseline;
     justify-content: flex-start;
+    padding-top: 8px;
 }
 
 #circle {
@@ -175,7 +196,7 @@ input {
 #bloc_page {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    width: 100%;
 }
 
 .marseille {
@@ -195,13 +216,14 @@ input {
 }
 
 #hebergements h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Raleway';
     font-weight: bold;
+    padding-top: 16px;
 }
 
 #hebergements h5 {
-    font-size: 10px;
+    font-size: 0.8rem;
     font-family: 'Raleway';
     font-weight: bolder;
 }
@@ -250,13 +272,13 @@ input {
 }
 
 .card-info h6 {
-    font-size: 14px;
+    font-size: 0.8rem;
     font-family: 'Raleway';
     font-weight: bold; 
 }
 
 .card-info p {
-    font-size: 10px;
+    font-size: 0.6rem;
     padding: 4px 0px 4px 0px;
     font-family: 'Raleway';
     font-weight:lighter;
@@ -265,7 +287,7 @@ input {
 }
 
 .rate {
-    font-size: 6px;
+    font-size: 0.4rem;
     color: #0065FC;
 }
 
@@ -285,10 +307,11 @@ input {
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-top: 16px;
 }
 
 .titre h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Raleway';
     font-weight: bold;
 }
@@ -305,7 +328,6 @@ input {
 .pop_cards a {
     text-decoration: none;
     color: #000000;
-    height: 30%;
     width: fit-content;
     display: flex;
 }
@@ -319,7 +341,9 @@ input {
     object-fit: contain;
     border-radius: 10px;
     align-items: center;
-    margin: auto; 
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .lesplus img {
@@ -337,7 +361,7 @@ input {
 }
 
 .card_info h6 {
-    font-size: 14px;
+    font-size: 0.8rem;
     font-family: 'Raleway';
     font-weight: bold;
 }
@@ -350,7 +374,7 @@ input {
 }
 
 .stars {
-    font-size: 6px;
+    font-size: 0.4rem;
     color: #0065FC;
     padding: 10px 4px 4px 4px;
 }
@@ -359,11 +383,13 @@ input {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
 }
 
 #activites h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Raleway';
     font-weight: bold;
 }
@@ -385,7 +411,7 @@ input {
 }
 
 .big_card {
-    padding: 8px 10px 8px 0px;
+    padding: 4px 5px 4px 0px;
 }
 
 .big_card img {
@@ -394,7 +420,7 @@ input {
 }
 
 .small_card {
-    padding: 8px 22px 8px 12px;
+    padding: 4px 10px 4px 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,10 +430,6 @@ input {
 .small_card img {
     width: 240px;
     height: 150px;
-}
-
-.small_card a {
-    padding: 8px 10px 8px 4px;
 }
 
 .cards_activites h6 {
@@ -425,27 +447,32 @@ input {
 .apropo {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: #F2F2F2;
+    padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 4px;
+    width: 100%;
 }
 
-.prop h6, .nos_hebergements h6, .assistance h6 {
+.footer_block {
+    display: inline;
+    text-align: left;
+}
+
+.footer_block h6 {
     font-size: 12px;
     font-weight: bolder;
-    padding: 4px 8px 4px 40px;
     font-family: 'Raleway';
 }
 
-.fonctionnement, .qualite, .aide {
+.list_footer {
     text-decoration: none;
     list-style: none;
+    padding: 0px;
 }
 
-
-.nos_hebergements, .assistance {
-    padding: 4px 8px 4px 80px;
-}
-.fonctionnement a, .qualite a, .aide a {
+.list_footer a {
     color: black;
     font-size: 9px;
     font-weight: lighter;

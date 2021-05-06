@@ -6,7 +6,6 @@
 
     .marseille {
         display: flex;
-        padding: 0px;
         margin: auto;
     }
 }
@@ -30,13 +29,24 @@
 
     #hebergements {
         width: auto;
-        margin: auto;
+        margin: 4px;
+    }
+
+    #hebergement h4 {
+        justify-content: center;
+    }
+
+    #hebergements:nth-child(1) {
+        flex: 2;
+    }
+
+    #populaires:nth-child(2) {
+        flex: 1;
     }
 
     #populaires {
         width: auto;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 8px;
     }
 
     .filtres {
@@ -92,8 +102,7 @@
 
 @media all and (max-width: 480px){
     #bloc_page {
-        width: auto;
-        margin: auto;
+        width: 100%;
     }
 
     .menu {
@@ -104,12 +113,16 @@
         display: flex;
         flex-wrap: wrap;
         width: auto;
+        border-bottom: 3px solid #F2F2F2;
+        margin-left: 4px;
     }
 
     .menu_mobile img {
         width: 16%;
         height: fit-content;
         margin-right: auto;
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
 
     .line_1 {
@@ -132,13 +145,12 @@
     }
 
     #bloc_page h4 {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: bolder;
-        margin: auto;
     }
 
     #bloc_page h6 {
-        font-size: 10px;
+        font-size: 1rem;
         font-weight: bolder;
     }
 
@@ -157,8 +169,9 @@
 
     .filtres h5 {
         padding: 0px;
+        padding-top: 8px;
         margin-left: 8px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .btn-image {
@@ -174,20 +187,32 @@
     #populaires {
         display: inline-block;
         width: auto;
+        margin: 4px;
+    }
+
+    .pop_cards {
+        height: fit-content;
+        margin-bottom: 8px;
+        margin-left: 4px;
+        margin-right: 4px;
     }
 
     .lesplus {
-        width: 260px;
-        height: auto;
+        width: 288px;
+        height: 120px;
+        margin-bottom: 6px;
+        margin-left: 8px;
+        margin-right: 0px;
     }
 
     #hebergement {
         height: auto;
         width: auto;
+        margin: 4px;
     }
     
     #hebergement h4 {
-        margin-left: 8px;
+        justify-content: center;
     }
 
     .hebergements_filtres {
@@ -201,8 +226,11 @@
     }
 
     .hotels {
-        width: 260px;
+        width: 288px;
         height: auto;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 0px;
     }
 
     .card-info {
@@ -224,9 +252,8 @@
         width: auto;
     }
 
-    .hebergements {
-        height: auto;
-        width: auto;
+    .row_hotel {
+        padding: 4px;
     }
 
     #activites {
@@ -239,36 +266,34 @@
     }
 
     .cards_activites h6 {
-        width: 260px;
+        width: 290px;
     }
 
     .big_card {
-        padding: 8px 10px 10px 0px;
+        padding: 8px 10px 0px 4px;
+        margin-left: 8px;
     }
 
     .big_card img {
         height: 110px;
-        width: 260px;
+        width: 290px;
     }
 
     .small_card {
-        padding: 8px 10px 5px 0px;
-    }
-
-    .small_card a {
-        padding: 8px 10px 5px 0px;
+        padding: 8px 10px 5px 4px;
+        margin-left: 8px;
     }
 
     .small_card img {
         height: 110px;
-        width: 260px;
+        width: 290px;
     }
 
     .apropo {
         flex-direction: column;
+        width: auto;
     }
 
-    .nos_hebergements, .assistance {
-        padding: 0;
+    .footer_block {
+        margin-left: 1rem;
     }
-}
