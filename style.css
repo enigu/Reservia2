@@ -6,14 +6,12 @@
 
     .marseille {
         display: flex;
-        margin: auto;
     }
 }
 
 @media all and (max-width: 768px){
     #bloc_page {
         width: 95%;
-        margin: auto;
     }
 
     .liste_nav {
@@ -66,6 +64,7 @@
 
     .row_hotel {
         flex-wrap: wrap;
+        padding: 8px;
     }
 
     #cards_marseille {

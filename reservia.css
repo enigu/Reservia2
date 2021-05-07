@@ -33,9 +33,9 @@ body h6 {
     background-color: #FFFFFF;
     display: flex;
     box-sizing: border-box;
-    margin: auto;
     margin-top: 8px;
-    margin-left: 4px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 0.8rem;
 }
 
@@ -75,8 +75,7 @@ body h6 {
     color: #0065FC;
     font-family: 'Raleway';
     font-weight: lighter;
-    font-family: 'Raleway';
-    font-weight: lighter;
+    padding-right: 4px;
 }
 
 .recherche {
@@ -84,7 +83,6 @@ body h6 {
     padding-bottom: 4px;
     padding-top: 4px;
     margin-left: 16px;
-    width: auto;
 }
 
 .btn-second {
@@ -153,7 +151,7 @@ input {
     align-items: flex-start;
     justify-content: space-between;
     list-style: none;
-    padding: 25px 25px 25px 4px;
+    padding: 16px 4px 16px 4px;
     color:  #000000;
 }
 
@@ -200,7 +198,7 @@ input {
 #bloc_page {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
 }
 
 .marseille {
@@ -390,6 +388,7 @@ input {
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 16px;
+    width: inherit;
 }
 
 #activites h4 {
