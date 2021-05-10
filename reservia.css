@@ -386,8 +386,8 @@ input {
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
     width: inherit;
 }
@@ -419,8 +419,8 @@ input {
 }
 
 .big_card img {
-    width: 240px;
-    height: 360px;
+    width: 100%;
+    height: 280px;
 }
 
 .small_card {
@@ -432,18 +432,18 @@ input {
 }
 
 .small_card img {
-    width: 240px;
-    height: 150px;
+    width: 100%;
+    height: 120px;
 }
 
 .cards_activites h6 {
     background-color: white;
     height: 32px;
-    width: 240px;
+    width: 100%;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border: 5px;
     border-radius:  0px 0px 10px 10px;
-    font-size: 12px;
+    font-size: 0.8em;
     font-family: 'Raleway';
     font-weight: bold;
 }
@@ -465,7 +465,7 @@ input {
 }
 
 .footer_block h6 {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: bolder;
     font-family: 'Raleway';
 }
@@ -474,6 +474,7 @@ input {
     text-decoration: none;
     list-style: none;
     padding: 0px;
+    font-size: 0.8em;
 }
 
 .list_footer a {
