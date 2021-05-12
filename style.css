@@ -104,29 +104,23 @@
         width: 95%;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .menu_mobile {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        border-bottom: 3px solid #F2F2F2;
-        padding: 4px;
-    }
-
-    .menu_mobile img {
-        width: 16%;
-        height: fit-content;
-        margin-right: auto;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
     .line_1 {
         display: flex;
         width: auto;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .droit{
+        order: 2;
+    }
+    
+    .liste_nav {
+        order: 3;
+        width: 100%;
+        text-align: center;
     }
 
     .liste_nav a:hover {
@@ -151,11 +145,7 @@
     #bloc_page h6 {
         font-size: 0.8rem;
         font-weight: bolder;
-    }
-
-    .liste_nav {
-        width: auto;
-    }  
+    } 
 
     .liste_nav a:hover {
         border-top: 0px;
