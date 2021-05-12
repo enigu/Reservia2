@@ -23,11 +23,11 @@
         display: flex;
         padding: 0px;
         width: auto;
+        padding-left: 10px;
     }
 
     #hebergements {
         width: auto;
-        margin: 4px;
     }
 
     #hebergement h4 {
@@ -44,7 +44,7 @@
 
     #populaires {
         width: auto;
-        margin: 8px;
+        margin-left: 8px;
     }
 
     .filtres {
@@ -83,6 +83,10 @@
 
     .small_card {
         padding: 8px 4px 8px 2px;
+    }
+
+    .small_card a {
+        margin-bottom: 16px;
     }
 
     .small_card img {

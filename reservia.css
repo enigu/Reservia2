@@ -216,7 +216,7 @@ input {
     display: inline-block;
     border-radius: 16px;
     height: auto;
-    width: 60%;
+    width: 65%;
     margin: auto;
 }
 
@@ -225,9 +225,10 @@ input {
     font-family: 'Raleway';
     font-weight: bold;
     padding-top: 16px;
+    padding-left: 8px;
 }
 
-#hebergements h5 {
+#hebergements p {
     font-size: 0.8rem;
     font-family: 'Raleway';
     font-weight: bolder;
@@ -237,7 +238,6 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 16px;
     background-color: #F2F2F2;
 }
 
@@ -314,6 +314,8 @@ input {
     justify-content: space-between;
     margin: auto;
     padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .titre h4 {
