@@ -14,7 +14,7 @@
         width: 95%;
     }
 
-    .liste_nav {
+    .list_nav {
         margin: auto;
         width: auto;
     }
@@ -47,7 +47,7 @@
         margin-left: 8px;
     }
 
-    .filtres {
+    .filter {
         flex-wrap: wrap;
     }
 
@@ -98,7 +98,7 @@
         width: 160px;  
     }
 
-    .apropo {
+    .footer {
         flex-direction: row;
     }
 }
@@ -108,28 +108,28 @@
         width: 95%;
     }
 
-    .line_1 {
-        display: flex;
-        width: auto;
-    }
-
-    .menu {
+    .navbar {
         justify-content: space-between;
     }
 
-    .droit{
+    .register {
         order: 2;
     }
     
-    .liste_nav {
+    .list_nav {
         order: 3;
         width: 100%;
         text-align: center;
     }
 
-    .liste_nav a:hover {
+    .list_nav a:hover {
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .list_nav a:active {
+        border-top: none;
     }
 
     .btn-group {
@@ -156,11 +156,11 @@
         border-bottom: 2px solid #0065FC;
     }
 
-    .filtres {
+    .filter {
         flex-wrap: wrap;
     }
 
-    .filtres h5 {
+    .filter h5 {
         padding: 0px;
         padding-top: 8px;
         margin-left: 8px;
@@ -171,7 +171,7 @@
         padding: 0px;
     }
 
-    .boutons_filtres {
+    .filter_button {
         flex-wrap: wrap;
         justify-content: left;
         padding: 0px;
@@ -282,7 +282,7 @@
         width: 290px;
     }
 
-    .apropo {
+    .footer {
         flex-direction: column;
         width: auto;
     }

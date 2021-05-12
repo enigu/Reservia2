@@ -24,7 +24,7 @@ body h6 {
     font-size: 0.8rem;
 }
 
-.menu {
+.navbar {
     background-color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +35,12 @@ body h6 {
     font-size: 0.8rem;
 }
 
-.menu img {
+.navbar img {
     width: 10%;
     height: fit-content;
 }
 
-.liste_nav {
+.list_nav {
     font-family: 'Raleway';
     font-weight: lighter;
     margin-left: auto;
@@ -48,38 +48,38 @@ body h6 {
     order: 2;
 }
 
-.liste_nav a {
+.list_nav a {
     color:#000000;
     font-family: 'Raleway';
     font-weight: lighter;
     padding: 8px;
 }
 
-.liste_nav a:link {
+.list_nav a:link {
     text-decoration: none;
 }
 
-.liste_nav a:hover {
+.list_nav a:hover {
     color: #0065FC;
     border-top: 3px solid #0065FC;
 }
 
-.liste_nav a:active {
+.list_nav a:active {
     border-top: 3px solid #0065FC;
 }
 
-.droit {
+.register {
     order: 3;
 }
 
-.droit a {
+.register a {
     color: #0065FC;
     font-family: 'Raleway';
     font-weight: lighter;
     padding-right: 4px;
 }
 
-.recherche {
+.search {
     font-family: 'Raleway';
     padding-bottom: 4px;
     padding-top: 4px;
@@ -91,12 +91,12 @@ body h6 {
     display: none;
 }
 
-.recherche h4 {
+.search h4 {
     padding-top: 8px;
     padding-bottom: 4px;
 }
 
-.recherche p {
+.search p {
     font-family: 'Raleway';  
     font-weight: lighter;
     padding-top: 4px;
@@ -105,7 +105,7 @@ body h6 {
 }
 
 .btn-map {
-    border: 2px solid #FFFFFF;
+    border: none;
     color: #000000;
     background-color: #F2F2F2;
     font-weight: bolder;
@@ -134,7 +134,7 @@ input {
     font-weight: bolder;
 }
 
-.filtres {
+.filter {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -143,11 +143,11 @@ input {
     color:  #000000;
 }
 
-.filtres h6 {
+.filter h6 {
     padding: 8px 12px 8px 0px;
 }
 
-.boutons_filtres {
+.filter_button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -455,7 +455,7 @@ input {
     font-weight: bold;
 }
 
-.apropo {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
