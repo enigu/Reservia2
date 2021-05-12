@@ -232,6 +232,8 @@ input {
     font-size: 0.8rem;
     font-family: 'Raleway';
     font-weight: bolder;
+    color: black;
+    padding-left: 8px;
 }
 
 .hebergements_filtres {
