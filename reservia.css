@@ -225,7 +225,7 @@ input {
     font-family: 'Raleway';
     font-weight: bold;
     padding-top: 16px;
-    padding-left: 8px;
+    padding-left: 16px;
 }
 
 #hebergements p {
@@ -316,7 +316,7 @@ input {
     justify-content: space-between;
     margin: auto;
     padding-top: 16px;
-    padding-left: 8px;
+    padding-left: 16px;
     padding-right: 8px;
 }
 
