@@ -447,7 +447,7 @@ input {
 
 .cards_activites h6 {
     background-color: white;
-    height: 32px;
+    height: auto;
     width: 100%;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border: 5px;
@@ -455,6 +455,7 @@ input {
     font-size: 0.8em;
     font-family: 'Raleway';
     font-weight: bold;
+    padding: 4px 0px 4px 4px;
 }
 
 .footer {
