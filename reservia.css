@@ -233,9 +233,10 @@ input {
     font-family: 'Raleway';
     font-weight: bolder;
     color: black;
-    padding-left: 8px;
 }
-
+.more {
+    padding-left: 10px;
+}
 .hebergements_filtres {
     display: flex;
     flex-direction: row;
@@ -276,7 +277,8 @@ input {
 .card-info {
     line-height: 2px;
     background-color: white;
-    padding: 4px 4px 4px 4px;
+    padding: 4px 0px 4px 0px;
+    text-align: start;
 }
 
 .card-info h6 {
@@ -287,11 +289,9 @@ input {
 
 .card-info p {
     font-size: 0.6rem;
-    padding: 4px 0px 4px 0px;
     font-family: 'Raleway';
     font-weight:lighter;
     opacity: .7;
-    margin-bottom: 5px;
 }
 
 .rate {
